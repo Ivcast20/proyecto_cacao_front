@@ -79,7 +79,7 @@ export default {
   methods: {
     traerDatos(anio = 2017) {
       axios
-        .get(`http://localhost:3000/api/cacao?anio=${anio}`)
+        .get(`https://backcacao.herokuapp.com/api/cacao?anio=${anio}`)
         .then((response) => {
           this.exportaciones = response.data.exportaciones;
           this.chartData = this.exportaciones;
